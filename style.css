@@ -167,6 +167,10 @@
     color: #35d399;
     margin-bottom: 0.5rem;
   }
+  .project-buttons {
+    padding-top: 10px;
+  }
+  
   
   /* ===== CONTACT ===== */
   .contact {
