@@ -147,16 +147,22 @@
   /* ===== PROJECTS ===== */
   .project-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Keeps responsiveness */
     gap: 2rem;
-  }
-  
-  .project-card {
+    
+    /* Set a max-width that allows exactly 3 columns to fit comfortably */
+    /* (3 * 300px min-width) + (2 * 2rem gap) = 900px + 64px = 964px */
+    max-width: 980px; /* Use a value slightly larger than your calculated minimum */
+    margin: 0 auto; /* Centers the whole grid */
+}
+.project-card {
     background: #1a1a1a;
     padding: 1.5rem;
     border-radius: 10px;
     transition: transform 0.3s ease, background 0.3s ease;
-  }
+}
+
+/* ... rest of your CSS ... */
   
   .project-card:hover {
     transform: translateY(-5px);
